@@ -8,7 +8,7 @@
 
 ## [节点描述](https://github.com/OS-Q/W18/wiki) 
 
-W18被动通信平台，用于被动触发通信
+W18被动通信平台，用于被外部设备触发通信
 
 ### [共用资源](OS-Q/)
 
@@ -21,29 +21,31 @@ W18被动通信平台，用于被动触发通信
 
 ## [包含设备](https://github.com/OS-Q/W18/wiki) 
 
-#### D120：[RFID](https://github.com/OS-Q/D120)
+#### D120：[RFID标签](https://github.com/OS-Q/D120)
 
-用于标识物体信息
+用作标签标识物体
 
-#### D121：[NULL](https://github.com/OS-Q/D121)
+#### D121：[RFID设备](https://github.com/OS-Q/D121)
 
+用作RFID读卡设备
 
+#### D122：[NFC标签](https://github.com/OS-Q/D122)
 
-#### D122：[NULL](https://github.com/OS-Q/D122)
+用作标签标识物品
 
+#### D123：[NFC设备](https://github.com/OS-Q/D123)
 
+用作NFC读卡设备
 
-#### D123：[NULL](https://github.com/OS-Q/D123)
+#### D124：[蓝牙标签](https://github.com/OS-Q/D124)
 
-
-
-#### D124：[NULL](https://github.com/OS-Q/D124)
-
+蓝牙广播标签信息
 
 #### D125：[NULL](https://github.com/OS-Q/D125)
 
 
 #### D126：[NULL](https://github.com/OS-Q/D126)
+
 
 
 ## [同级平台](https://github.com/OS-Q/M5/wiki) 
