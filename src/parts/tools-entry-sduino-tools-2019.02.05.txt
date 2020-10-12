@@ -1,0 +1,31 @@
+                {
+                    "name": "STM8Tools",
+                    "version": "2019.02.05",
+                    "systems": [
+                        {
+                            "host": "i686-pc-linux-gnu",
+                            "url": "https://github.com/tenbaht/sduino/releases/download/v0.5/sduino-tools_linux32-2019.02.05.tar.bz2",
+                            "archiveFileName": "sduino-tools_linux32-2019.02.05.tar.bz2",
+                            "checksum": "SHA-256:3dcb033ac90f79fde16ab762cc78e783145ad0d016a1d3dd071b02a248fb9777",
+                            "size": "48842"
+                        },{
+                            "host": "x86_64-pc-linux-gnu",
+                            "url": "https://github.com/tenbaht/sduino/releases/download/v0.5/sduino-tools_linux64-2019.02.05.tar.bz2",
+                            "archiveFileName": "sduino-tools_linux64-2019.02.05.tar.bz2",
+                            "checksum": "SHA-256:06e7c0b94e03a0f705b8cfcf7a768467eb6d47c31b9338f0e5aba844a90261f8",
+                            "size": "48636"
+                        },{
+                            "host": "x86_64-apple-darwin",
+                            "url": "https://github.com/tenbaht/sduino/releases/download/v0.5/sduino-tools_macosx-2019.02.05.tar.bz2",
+                            "archiveFileName": "sduino-tools_macosx-2019.02.05.tar.bz2",
+                            "checksum": "SHA-256:94d4b3c4a7567c198e8f867f259e89d1f2b544b75f3d57a118b41067dea058a8",
+                            "size": "51539"
+                        },{
+                            "host": "i686-mingw32",
+                            "url": "https://github.com/tenbaht/sduino/releases/download/v0.5/sduino-tools_mingw32-2019.02.05.tar.bz2",
+                            "archiveFileName": "sduino-tools_mingw32-2019.02.05.tar.bz2",
+                            "checksum": "SHA-256:470b7a332ca8ccdd5e09437cc52439f09fed4dd435cb6bbb28984a9c00595998",
+                            "size": "417753"
+                        }
+                    ]
+                },
