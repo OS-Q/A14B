@@ -40,14 +40,10 @@ jobs:
       - name: Build
         run: |
           echo "Setup build environment"
-          source board-manager/assemble.sh
-          source board-manager/minimize-sdcc.sh
           touch build.log
           export CORE=n205
-          echo "build test"
+          echo "build test"  >> build.log
           cd board-manager & make
-          SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      application   >> build.log
-          SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      test          >> build.log
           mv build.log build_eval.log
 
       - name: Upload Log
