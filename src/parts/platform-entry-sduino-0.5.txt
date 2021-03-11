@@ -22,7 +22,7 @@
                             "packager": "sduino"
                         }
                     ],
-                    "url": "https://github.com/tenbaht/sduino/releases/download/v0.5/sduino-core-0.5.tar.bz2",
+                    "url": "https://github.com/OS-Q/A14/releases/download/v0.5/sduino-core-0.5.tar.bz2",
                     "archiveFileName": "sduino-core-0.5.tar.bz2",
                     "checksum": "SHA-256:34675a76d786556b580d13a421518e2b64caec5d63d876558a53d6ae5a6e06f2",
                     "size": "2227581"

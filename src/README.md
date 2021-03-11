@@ -90,11 +90,11 @@ final package index file.
 
 If using attached files to github releases:
 
-URLs of the auto-generated repository archive files: 
+URLs of the auto-generated repository archive files:
 
-- https://github.com/tenbaht/sduino/archive/<tagname>.zip
-- https://github.com/tenbaht/sduino/archive/<tagname>.tar.gz
+- https://github.com/OS-Q/A14/archive/<tagname>.zip
+- https://github.com/OS-Q/A14/archive/<tagname>.tar.gz
 
 URL of files attached to github releases:
 
-https://github.com/tenbaht/sduino/releases/download/<tagname>/<filename>
+https://github.com/OS-Q/A14/releases/download/<tagname>/<filename>

@@ -6,7 +6,7 @@ TOOLSVERSION=2019.02.05
 # default the tool version to be the current date as YYYY.MM.DD
 #TOOLSVERSION?=$(shell date '+%Y.%m.%d')
 
-BASEURL=https://github.com/tenbaht/sduino/releases/download/v$(COREVERSION)
+BASEURL=https://github.com/OS-Q/A14/releases/download/v$(COREVERSION)
 
 PACKAGEFILE=package_sduino_stm8_index.json
 
