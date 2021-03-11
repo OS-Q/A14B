@@ -40,9 +40,8 @@ jobs:
       - name: Build
         run: |
           echo "Setup build environment"
-          source setup.sh
-          source .ci/build_sdk.sh
-          source .ci/build_applications.sh
+          source board-manager/assemble.sh
+          source board-manager/minimize-sdcc.sh
           touch build.log
           export CORE=n205
           echo "build test"
