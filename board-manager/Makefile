@@ -1,5 +1,5 @@
 # the required versions for the new build
-COREVERSION=0.5
+COREVERSION=0.6
 SDCCVERSION=11242
 TOOLSVERSION=2019.02.05
 
