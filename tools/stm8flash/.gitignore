@@ -1,0 +1,11 @@
+*~
+*.bak
+.*.swp
+*.o
+*.bin
+*.ihx
+*.hex
+*.exe
+*.gch
+tags
+stm8flash
