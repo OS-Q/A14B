@@ -24,36 +24,36 @@ jobs:
           submodules: "recursive"
           fetch-depth: 1
 
-    - name: Prepare for Ubuntu
-      if: startsWith(matrix.os, 'ubuntu')
-      run: |
-          mkdir -p test
-          cd test
-          toolzip=nuclei_riscv_newlibc_prebuilt_linux64_2020.08.tar.bz2
-          if [ ! -e $toolzip ] ; then
-            wget https://nucleisys.com/upload/files/toochain/gcc/$toolzip
-          fi
-          tar -xjf $toolzip
-          cd ..
-          echo "NUCLEI_TOOL_ROOT=$(pwd)/test" > setup_config.sh
+      - name: Prepare for Ubuntu
+        if: startsWith(matrix.os, 'ubuntu')
+        run: |
+            mkdir -p test
+            cd test
+            toolzip=nuclei_riscv_newlibc_prebuilt_linux64_2020.08.tar.bz2
+            if [ ! -e $toolzip ] ; then
+              wget https://nucleisys.com/upload/files/toochain/gcc/$toolzip
+            fi
+            tar -xjf $toolzip
+            cd ..
+            echo "NUCLEI_TOOL_ROOT=$(pwd)/test" > setup_config.sh
 
-    - name: Build
-      run: |
-        echo "Setup build environment"
-        source setup.sh
-        source .ci/build_sdk.sh
-        source .ci/build_applications.sh
-        touch build.log
-        export CORE=n205
-        echo "build test"
-        cd board-manager & make
-        SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      application   >> build.log
-        SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      test          >> build.log
-        mv build.log build_eval.log
+      - name: Build
+        run: |
+          echo "Setup build environment"
+          source setup.sh
+          source .ci/build_sdk.sh
+          source .ci/build_applications.sh
+          touch build.log
+          export CORE=n205
+          echo "build test"
+          cd board-manager & make
+          SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      application   >> build.log
+          SOC=gd32vf103 BOARD=gd32vf103v_eval nsdk_build_directory      test          >> build.log
+          mv build.log build_eval.log
 
-    - name: Upload Log
-      uses: actions/upload-artifact@v2.2.0
-      with:
-        name: upload_log
-        path: |
-          build*.log
+      - name: Upload Log
+        uses: actions/upload-artifact@v2.2.0
+        with:
+          name: upload_log
+          path: |
+            build*.log
